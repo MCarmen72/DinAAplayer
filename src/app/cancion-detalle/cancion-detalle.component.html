@@ -1,7 +1,17 @@
 <div *ngIf="cancion">
 
     <h2>{{cancion.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{cancion.id}}</div>
+
+    <div>
+      <h3> Artista: {{cancion.artista}}</h3> 
+      <h3> Titulo: {{cancion.name}}</h3>
+      <h3> Album: {{cancion.album}}</h3>
+      <h3> Año: {{cancion.year}}</h3>
+      <h3> Genero: {{cancion.genero}}</h3>
+
+    <div><h3><span>id: </span>{{cancion.id}}</h3></div>
+    </div>
+    
     <div>
       <label>name:
         <input [(ngModel)]="cancion.name" placeholder="name"/>
